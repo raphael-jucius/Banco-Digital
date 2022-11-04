@@ -6,6 +6,9 @@ public class Main {
         Conta cc = new ContaCorrente(raphael);
         Conta cp = new ContaPoupanca(raphael);
 
+        cc.depositar(100);
+        cc.transferir(50,cp);
+
         cc.imprimirExtrato();
         cp.imprimirExtrato();
     }
